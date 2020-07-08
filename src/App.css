@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Proba Pro Regular";
+  src: url("./fonts/proba_pro_regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/proba_pro_regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/proba_pro_regular.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/proba_pro_regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/proba_pro_regular.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/proba_pro_regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/proba_pro_regular.svg#proba_pro_regular") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#formID {
+  /* Style for "form" */
+  width: 630px;
+  height: 370px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  padding: 4%;
+}
+
+#title {
+  /* Style for "Отправить" */
+  width: 390px;
+  height: 30px;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+#underTitle {
+  /* Style for "Анонимные" */
+  width: 252px;
+  height: 15px;
+  color: #8f8f8f;
+  font-family: "Proba Pro Regular";
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for BUTTONS */
+.twoButtons {
+  /* Style for two  buttons */
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#clearButton {
+  /* Style for button"Очистить" */
+  width: 215px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-style: none;
+}
+#clearButtonText {
+  /* Style for text of button "Очистить" */
+  width: 85px;
+  height: 19px;
+  opacity: 0.5;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+}
+#sendButton {
+  /* Style for button "Отправить" */
+  width: 215px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: center;
+  border-style: none;
+}
+#sendButtonText {
+  /* Style for text of button "Отправить" */
+  width: 86px;
+  height: 19px;
+  opacity: 0.5;
+  color: #fafafa;
+  font-family: "Proba Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Style for BUTTONS */
+
+/* Style for INPUTS */
+.twoInputs {
+  /* Style for the div of two inputs for name and email */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputStyle {
+  /* Style for input for name and email */
+  width: 172px;
+  height: 29px;
+  width: 100%;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-style: none;
+  border-bottom: solid 1px #8f8f8f;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.inputStyleError {
+  /* Style for input for name and email */
+  width: 172px;
+  height: 29px;
+  width: 100%;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-style: none;
+  border-bottom: solid 1px #ff4242;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#inputStyleMsgDiv {
+  /* Style for the div of the input for message */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* height: 67px; */
 }
 
-.App-link {
-  color: #61dafb;
+.inputStyleMsg {
+  /* Style for "input message" */
+  width: 552px;
+  height: 29px;
+  width: 100%;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-style: none;
+  border-bottom: solid 1px #8f8f8f;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.inputStyleMsgError {
+  /* Style for "input message" */
+  width: 552px;
+  height: 29px;
+  width: 100%;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-style: none;
+  border-bottom: solid 1px #ff4242;
+  color: #333333;
+  font-family: "Proba Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+::-webkit-input-placeholder {
+  /* Style for "placeholder text of input" */
+  width: 97px;
+  height: 22px;
+  color: #8f8f8f;
+  font-family: "Proba Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+input:focus::placeholder {
+  /* Style for placeholder of input */
+  transform: translateY(-22%);
+  width: 173px;
+  height: 44px;
+  color: #8f8f8f;
+  font-family: "Proba Pro Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+input:focus {
+  border-bottom: solid 1px #4285f4;
+}
+.inputStyleMsg:focus {
+  border-bottom: solid 1px #4285f4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for INPUTS */
+
+.errMsg {
+  /* Style for error text */
+  width: 172px;
+  height: 22px;
+  color: #ff4242;
+  font-family: "Proba Pro Regular";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.divForInput {
+  display: block;
+  width: 173px;
+  height: 67px;
 }
