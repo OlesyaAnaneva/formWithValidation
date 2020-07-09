@@ -4,10 +4,10 @@ Created using React JS
 
 ## Empty form:
 The button "отправить" is disabled until all the fields aren't filled correctly.
-![form](https://github.com/OlesyaAnaneva/form/blob/master/public/emptyform.png)
+![form](https://github.com/OlesyaAnaneva/formWithValidation/blob/master/public/emptyform.png)
 
 ## Validation:
-![validation](https://github.com/OlesyaAnaneva/form/blob/master/public/formerrors.png)
+![validation](https://github.com/OlesyaAnaneva/formWithValidation/blob/master/public/formerrors.png)
 
 ### `npm start`
 ```
